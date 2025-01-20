@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+</head>
+<body>
+<div class="main">    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/DHARA.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Dhara</span> <br>Dobariya From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMAGES/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse eu purus auctor, rutrum arcu in, porttitor dolor.
+                         Nulla facilisi. Aenean viverra odio a sem lobortis porttitor.
+                          Aliquam erat volutpat. Nam vel porttitor massa.
+                           Mauris aliquam risus sed mi placerat pretium eu nec ligula.
+                            Duis nec ultrices lacus. Nunc venenatis, elit in pretium tincidunt, 
+                            est dui iaculis elit, nec euismod lacus elit eget nunc.</p>
+                    <br>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <br>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>HTML/CSS/JavaScript</li>
+                            <li><span>Back-End</span><br>Node.js/Express</li>
+                            <li><span>Databases</span><br>MySQL/PostgreSQL</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Academic Project</li>
+                            <li><span>2023-2024</span><br>Internship at YAZ INFOTECH</li>
+                            <li><span>2023-Present</span><br>Computer Teacher</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2023</span><br>M.SC Zoology at Saurastra University</li>
+                            <li><span>2023-2024</span><br>Full Stack Developer course at HK institute, Surat</li>
+                            <li><span>2023-2024</span><br>Full Stack Web Development Bootcamp - UDEMY</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End </h2>
+                    <p>Design and develop visually appealing websites for businesses  or individuals.
+                        Design static websites using HTML/CSS or dynamic websites powered by frameworks</p>
+                         <a href="frontend.html">Learn More</a>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-node"></i>
+                    <h2>Back-End</h2>
+                    <p>Backend Development using Node.js and Express. 
+                        Deliver efficient, scalable and secure backend solutions.
+                    </p>
+                         <a href="backend.html">Learn More</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Design logical and efficient Database structures tailored to your client's 
+                        business logic and application needs by using MySQL and PostgreSQL </p>
+                         <a href="database.html">Learn More</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="IMAGES/solar.png" alt="solar">
+                    <div class="layer">
+                        <h3>Solar Panel Website</h3>
+                        <p>Create a user-Friendly structure with home page, about us, services, gallery,
+                             testimonial, contact us form.Provide detailed information </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="IMAGES/drum kit.png" alt="drum">
+                    <div class="layer">
+                        <h3>Drum Kit Sound webpage</h3>
+                        <p>Its drum kit sound webpage, it is made by CSS/HTML & JavaScript
+                            When click on specific image it will play specific sound.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="IMAGES/work-3.jpg" alt="work-3">
+                    <div class="layer">
+                        <h3>Social Media app</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>dobariyadhara277@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9081473834</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+            
+                    </div>
+
+                    <a href="./DHARA CV (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Dhara</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // onclick hide content
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // add colour line on click of tab-link
+            event.currentTarget.classList.add("active-link");
+
+            // it shows content of tab-link
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYbGWcc1R0Nz_aNyJEQmubzKrKB1mGtY9aRLYoK6lMcuKbrUq8gFRN3OErlnO7T9qA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
