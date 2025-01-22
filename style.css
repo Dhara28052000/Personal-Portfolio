@@ -78,6 +78,9 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #ababab;
 }
+img{
+    height: 300px;
+}
 .row{
     display: flex;
     justify-content: space-between;
