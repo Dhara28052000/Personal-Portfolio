@@ -78,6 +78,9 @@ nav ul li a:hover::after{
     padding: 80px 0;
     color: #ababab;
 }
+#about img{
+    height: 300px;
+}
 img{
     height: 300px;
 }
